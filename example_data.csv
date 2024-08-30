@@ -1,0 +1,6 @@
+id,username,password,role,region,familiarity,availability,shift,bus_route,is_linked
+1,driver_north_1,password,crew,north,Route 1,True,Morning,Route 1,False
+2,conductor_north_1,password,crew,north,Route 1,True,Morning,Route 1,False
+3,driver_south_1,password,crew,south,Route 2,True,Evening,Route 2,False
+4,conductor_south_1,password,crew,south,Route 2,True,Evening,Route 2,False
+5,passenger_1,password,passenger,,,True,,,

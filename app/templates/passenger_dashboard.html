@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Passenger Dashboard</h2>
+<p>Welcome, {{ user.username }}!</p>
+<p>Your bus location: <div id="map"></div></p>
+
+<script>
+    function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 12,
+            center: {lat: 28.6139, lng: 77.2090}
+        });
+
+        var marker = new google.maps.Marker({
+            position: {lat: 28.6139, lng: 77.2090},
+            map: map,
+            title: 'Your Bus'
+        });
+    }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAC3Oc01wiyYlUw4HaLhkVu--VKlUYJynw&callback=initMap"
+        async defer></script>
+{% endblock %}
